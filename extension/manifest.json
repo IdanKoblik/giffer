@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "GIF URL Collector",
+  "version": "1.0",
+  "description": "Collect all GIF URLs on the current page via DOM scanning and network interception.",
+  "permissions": ["activeTab", "scripting", "webRequest", "storage", "downloads"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "GIF URL Collector",
+    "default_icon": {
+        "19": "logo.png",
+        "128": "logo.png"
+    }
+  }
+}
